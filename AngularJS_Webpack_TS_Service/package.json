@@ -9,8 +9,17 @@
     "build-dev": "webpack --env=dev --mode development --config webpack.config.js --progress --profile --colors",
     "build-prod": "webpack --env=prod --optimize-minimize --mode production --config webpack.config.js --progress --profile --colors"
   },
-  "author": "",
+  "author": "Luis Angel Peña Zuñiga",
   "license": "ISC",
+  "keywords": [
+    "angular",
+    "jquery",
+    "node",
+    "css",
+    "webpack",
+    "bootstrap",
+    "jquery"
+  ],
   "devDependencies": {
     "@types/angular": "^1.7.0",
     "@types/angular-ui-router": "^1.1.40",
