@@ -6,6 +6,7 @@ class UserController implements ng.IController {
     users: any;
     constructor(public user: UserService, public $state: ng.ui.IStateService) {
         this.user.getAll().then((data) => {
+            console.log('data.data: ', data.data)
             this.users = data.data
         });
     }

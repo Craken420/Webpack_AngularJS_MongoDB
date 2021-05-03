@@ -19,5 +19,12 @@ app.use( cors() )
 app.use( errorHandler )
 
 app.get( '/', (req, res) => res.send('Home') )
+app.get( '/users', (req, res) => res.json([
+    {name: 'Lol', email: 'lol@hotmail.com'},
+    {name: 'Free', email: 'Free@hotmail.com'},
+    {name: 'Fire', email: 'Fire@hotmail.com'},
+    {name: 'Judge', email: 'Judge@hotmail.com'},
+    {name: 'Pitbull', email: 'Pitbull@hotmail.com'}
+]));
 
 module.exports = app

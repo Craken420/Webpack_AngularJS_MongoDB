@@ -4,6 +4,6 @@ export class UserService {
     constructor (protected $q: ng.IQService, protected $http: ng.IHttpService) {}
 
     public getAll(): angular.IHttpPromise<any> {
-        return this.$http.get('http://localhost:3001/users')
+        return this.$http.get('http://localhost:4000/users');
     }
-} 
+}
